@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .gold-border {
+    border: 3px solid #D4AF37;
+  }
+  .gold-accent {
+    @apply border-b-4 border-gold;
+  }
+  .chat-bubble-assistant {
+    @apply bg-stone/50 text-deep rounded-lg px-6 py-4 max-w-3xl animate-slide-up;
+  }
+  .chat-bubble-user {
+    @apply bg-gold/10 text-deep rounded-lg px-6 py-4 max-w-3xl animate-slide-up;
+  }
+}

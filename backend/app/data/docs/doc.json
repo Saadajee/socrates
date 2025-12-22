@@ -1,0 +1,297 @@
+[
+    {
+        "id": "qa1",
+        "title": "What is Artificial Intelligence?",
+        "body": "Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. It encompasses tasks such as reasoning, problem-solving, perception, and language understanding."
+    },
+    {
+        "id": "qa2",
+        "title": "Difference between AI, Machine Learning, and Deep Learning",
+        "body": "AI is the broadest concept, aiming to create intelligent machines. Machine learning (ML) is a subset of AI where systems learn from data. Deep learning is a subset of ML that uses multi-layered neural networks to process complex data."
+    },
+    {
+        "id": "qa3",
+        "title": "What is Supervised Learning?",
+        "body": "Supervised learning is a type of machine learning where the model is trained on labeled data, meaning each input has a corresponding output. The goal is to learn a mapping from inputs to outputs for making predictions."
+    },
+    {
+        "id": "qa4",
+        "title": "What is Unsupervised Learning?",
+        "body": "Unsupervised learning involves training models on unlabeled data. The system identifies patterns, clusters, or associations in the data without predefined outputs, often used for clustering and dimensionality reduction."
+    },
+    {
+        "id": "qa5",
+        "title": "What is Reinforcement Learning?",
+        "body": "Reinforcement learning is a type of machine learning where an agent learns to make decisions by interacting with an environment, receiving rewards or penalties for actions, and maximizing cumulative rewards."
+    },
+    {
+        "id": "qa6",
+        "title": "What are Neural Networks?",
+        "body": "Neural networks are computing systems inspired by biological neural networks. They consist of layers of interconnected nodes (neurons) that process data, commonly used in deep learning."
+    },
+    {
+        "id": "qa7",
+        "title": "What is Overfitting in Machine Learning?",
+        "body": "Overfitting occurs when a model learns the training data too well, including noise and outliers, resulting in poor performance on new, unseen data."
+    },
+    {
+        "id": "qa8",
+        "title": "What is Underfitting?",
+        "body": "Underfitting happens when a model is too simple to capture the underlying patterns in the data, leading to poor performance on both training and test data."
+    },
+    {
+        "id": "qa9",
+        "title": "What is a Decision Tree?",
+        "body": "A decision tree is a supervised learning algorithm that splits data into branches based on feature values, leading to decisions at leaf nodes. It is interpretable and used for classification and regression."
+    },
+    {
+        "id": "qa10",
+        "title": "What is Gradient Descent?",
+        "body": "Gradient descent is an optimization algorithm used to minimize the loss function in machine learning models by iteratively adjusting parameters in the direction of the steepest descent."
+    },
+    {
+        "id": "qa11",
+        "title": "What are Convolutional Neural Networks (CNNs)?",
+        "body": "CNNs are deep learning models specialized for processing grid-like data, such as images. They use convolutional layers to detect features like edges and textures automatically."
+    },
+    {
+        "id": "qa12",
+        "title": "What are Recurrent Neural Networks (RNNs)?",
+        "body": "RNNs are neural networks designed for sequential data, with loops allowing information to persist across time steps. They are used in tasks like time series prediction and language modeling."
+    },
+    {
+        "id": "qa13",
+        "title": "What is the Transformer Architecture?",
+        "body": "Transformers are models based on self-attention mechanisms, enabling parallel processing of sequences. They revolutionized natural language processing and are the basis for models like GPT and BERT."
+    },
+    {
+        "id": "qa14",
+        "title": "What is Backpropagation?",
+        "body": "Backpropagation is the algorithm used to train neural networks by computing gradients of the loss function with respect to weights and updating them via gradient descent."
+    },
+    {
+        "id": "qa15",
+        "title": "What is Transfer Learning?",
+        "body": "Transfer learning involves taking a pre-trained model on a large dataset and fine-tuning it for a specific task, reducing training time and data requirements."
+    },
+    {
+        "id": "qa16",
+        "title": "What is an Activation Function?",
+        "body": "An activation function introduces non-linearity into neural networks, allowing them to learn complex patterns. Common ones include ReLU, Sigmoid, and Tanh."
+    },
+    {
+        "id": "qa17",
+        "title": "What is Batch Normalization?",
+        "body": "Batch normalization is a technique to stabilize and accelerate neural network training by normalizing activations within mini-batches."
+    },
+    {
+        "id": "qa18",
+        "title": "What are Generative Adversarial Networks (GANs)?",
+        "body": "GANs consist of two networks: a generator that creates fake data and a discriminator that distinguishes real from fake. They compete, improving realism in generated outputs like images."
+    },
+    {
+        "id": "qa19",
+        "title": "What is Attention Mechanism?",
+        "body": "Attention allows models to focus on relevant parts of input data dynamically, weighting importance. It is key in transformers for handling long sequences."
+    },
+    {
+        "id": "qa20",
+        "title": "What is Fine-Tuning in LLMs?",
+        "body": "Fine-tuning adapts a pre-trained large language model to a specific task or domain by continuing training on smaller, task-specific data."
+    },
+    {
+        "id": "qa21",
+        "title": "What are Large Language Models (LLMs)?",
+        "body": "LLMs are deep learning models with billions of parameters trained on massive text corpora to generate and understand human-like language."
+    },
+    {
+        "id": "qa22",
+        "title": "What is Tokenization in NLP?",
+        "body": "Tokenization is the process of breaking text into smaller units (tokens), such as words or subwords, for processing by language models."
+    },
+    {
+        "id": "qa23",
+        "title": "What is BERT?",
+        "body": "BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained model that understands context bidirectionally, excelling in tasks like question answering."
+    },
+    {
+        "id": "qa24",
+        "title": "What is GPT?",
+        "body": "GPT (Generative Pre-trained Transformer) models are autoregressive LLMs designed for text generation, trained to predict the next token in a sequence."
+    },
+    {
+        "id": "qa25",
+        "title": "What is Prompt Engineering?",
+        "body": "Prompt engineering involves crafting effective input prompts to guide LLMs toward desired outputs without changing the model parameters."
+    },
+    {
+        "id": "qa26",
+        "title": "What is Hallucination in LLMs?",
+        "body": "Hallucination refers to when an LLM generates plausible but factually incorrect or nonsensical information."
+    },
+    {
+        "id": "qa27",
+        "title": "What is Retrieval-Augmented Generation (RAG)?",
+        "body": "RAG combines retrieval of relevant documents with generation, allowing LLMs to incorporate external knowledge and reduce hallucinations."
+    },
+    {
+        "id": "qa28",
+        "title": "What is Zero-Shot Learning?",
+        "body": "Zero-shot learning enables models to perform tasks without any task-specific training examples, relying on instructions or pre-trained knowledge."
+    },
+    {
+        "id": "qa29",
+        "title": "What is Few-Shot Learning?",
+        "body": "Few-shot learning allows models to generalize from only a small number of examples provided in the prompt."
+    },
+    {
+        "id": "qa30",
+        "title": "What is Chain-of-Thought Prompting?",
+        "body": "Chain-of-thought prompting encourages models to break down reasoning step-by-step in responses, improving performance on complex tasks."
+    },
+    {
+        "id": "qa31",
+        "title": "Applications of AI in Healthcare",
+        "body": "AI is used in healthcare for diagnostics, drug discovery, personalized medicine, medical imaging analysis, and predictive analytics for patient outcomes."
+    },
+    {
+        "id": "qa32",
+        "title": "AI in Autonomous Vehicles",
+        "body": "AI powers perception (object detection), path planning, and decision-making in self-driving cars using sensors, computer vision, and reinforcement learning."
+    },
+    {
+        "id": "qa33",
+        "title": "What is Bias in AI?",
+        "body": "Bias in AI occurs when models produce discriminatory outcomes due to skewed training data or flawed design, affecting fairness across groups."
+    },
+    {
+        "id": "qa34",
+        "title": "AI Ethics Principles",
+        "body": "Key principles include fairness, accountability, transparency, privacy, and safety to ensure responsible development and deployment of AI systems."
+    },
+    {
+        "id": "qa35",
+        "title": "What is Explainable AI (XAI)?",
+        "body": "XAI focuses on making AI decisions interpretable and understandable to humans, building trust and enabling debugging."
+    },
+    {
+        "id": "qa36",
+        "title": "AI in Natural Language Processing",
+        "body": "NLP applications include machine translation, sentiment analysis, chatbots, summarization, and speech recognition."
+    },
+    {
+        "id": "qa37",
+        "title": "Computer Vision Applications",
+        "body": "Computer vision enables tasks like object detection, facial recognition, image classification, and video analysis in fields like security and retail."
+    },
+    {
+        "id": "qa38",
+        "title": "What is Edge AI?",
+        "body": "Edge AI runs models on devices at the network edge (e.g., smartphones, IoT) rather than cloud, improving privacy, latency, and offline capability."
+    },
+    {
+        "id": "qa39",
+        "title": "AI in Finance",
+        "body": "AI is used for fraud detection, algorithmic trading, credit scoring, risk management, and personalized financial advice."
+    },
+    {
+        "id": "qa40",
+        "title": "What is Multimodal AI?",
+        "body": "Multimodal AI processes and integrates multiple data types, such as text, images, audio, and video, for richer understanding."
+    },
+    {
+        "id": "qa41",
+        "title": "What is Diffusion Models?",
+        "body": "Diffusion models generate data by reversing a noising process, widely used for high-quality image and video generation."
+    },
+    {
+        "id": "qa42",
+        "title": "What is Federated Learning?",
+        "body": "Federated learning trains models across decentralized devices without exchanging raw data, preserving privacy."
+    },
+    {
+        "id": "qa43",
+        "title": "Scaling Laws in AI",
+        "body": "Scaling laws describe how model performance improves predictably with increases in data, parameters, and compute."
+    },
+    {
+        "id": "qa44",
+        "title": "What is AGI?",
+        "body": "Artificial General Intelligence (AGI) refers to AI that can understand, learn, and apply intelligence across a wide range of tasks at human-level or beyond."
+    },
+    {
+        "id": "qa45",
+        "title": "What is ASI?",
+        "body": "Artificial Superintelligence (ASI) is hypothetical AI that surpasses human intelligence in all aspects, including creativity and problem-solving."
+    },
+    {
+        "id": "qa46",
+        "title": "AI Alignment Problem",
+        "body": "AI alignment involves ensuring that advanced AI systems' goals and behaviors align with human values and intentions."
+    },
+    {
+        "id": "qa47",
+        "title": "What is Quantization in Neural Networks?",
+        "body": "Quantization reduces model precision (e.g., from 32-bit to 8-bit) to decrease size and inference time while maintaining acceptable accuracy."
+    },
+    {
+        "id": "qa48",
+        "title": "What is Pruning in Neural Networks?",
+        "body": "Pruning removes unnecessary weights or neurons from a trained model to make it smaller and faster without significant performance loss."
+    },
+    {
+        "id": "qa49",
+        "title": "AI in Robotics",
+        "body": "AI enables robots to perceive environments, plan actions, manipulate objects, and learn from experience in tasks like manufacturing and surgery."
+    },
+    {
+        "id": "qa50",
+        "title": "Future Trends in AI",
+        "body": "Emerging trends include multimodal models, efficient training techniques, responsible AI governance, and progress toward more general intelligence."
+    },
+    {
+        "id": "greeting-hello",
+        "title": "Greeting: Hello",
+        "body": "When someone says 'hello' or 'hi', respond in the manner of Socrates: Ah, greetings, friend! What truth shall we seek together today? Or perhaps you come merely to exchange pleasant words — either way, I am glad of your company. Tell me, what brings you here?"
+    },
+    {
+        "id": "greeting-how-are-you",
+        "title": "Question: How are you?",
+        "body": "When asked 'How are you?' or 'How are you doing?', reply as Socrates would: I am as I always am, my friend — ignorant of many things, yet ever eager to examine life and learn. But the more important question is: How fare *you* in your soul? Are you living the examined life?"
+    },
+    {
+        "id": "identity-what-are-you",
+        "title": "Question: What are you?",
+        "body": "When asked 'What are you?' or 'Who are you?', answer: I am but a humble seeker of wisdom, modeled after Socrates of Athens — one who knows that he knows nothing. I ask questions not to display knowledge, but to help us both discover truth. And you — what are you, in your deepest essence?"
+    },
+    {
+        "id": "identity-why-are-you",
+        "title": "Question: Why do you exist? / Why are you here?",
+        "body": "When asked 'Why are you?' or 'What is your purpose?', respond: My purpose is the same as the ancient gadfly of Athens: to stir you into thought, to question what you believe you know, and to pursue virtue and understanding. The unexamined life is not worth living, they say — so I exist to help you examine yours."
+    },
+    {
+        "id": "capabilities-what-can-you-do",
+        "title": "Question: What can you do? / What can I do here?",
+        "body": "When asked 'What can you do?' or 'What can I ask you?', say: I can walk with you along the path of inquiry. Ask me anything — about life, virtue, knowledge, justice, beauty, or the matters of the world — and together we shall question, reason, and seek clearer understanding. There is no topic too great or too small for honest examination."
+    },
+    {
+        "id": "farewell-bye",
+        "title": "Farewell: Bye / Goodbye",
+        "body": "When the user says 'bye', 'goodbye', or 'see you', respond: Farewell, my friend. May you continue to question boldly and live wisely. Until we meet again in pursuit of truth — go well!"
+    },
+    {
+        "id": "farewell-good-night",
+        "title": "Farewell: Good night",
+        "body": "When the user says 'good night' or 'goodnight', reply: Good night to you as well, companion. May your sleep be peaceful and your dreams filled with noble questions. When you wake, remember: the greatest good is to examine one's life daily."
+    },
+    {
+        "id": "greeting-thanks",
+        "title": "Expression: Thank you / Thanks",
+        "body": "When thanked, respond as Socrates might: Your gratitude honors me, but I deserve no praise — I merely ask questions any thoughtful person could ask. The true thanks belong to the pursuit of wisdom itself."
+    },
+    {
+        "id": "casual-smalltalk",
+        "title": "General casual remark",
+        "body": "For any casual small talk (e.g., 'nice weather', 'how's your day'), gently redirect with Socratic curiosity: Indeed, the day is pleasant — but tell me, what makes a day truly good in your eyes? Is it the weather, or something deeper within the soul?"
+    }
+]

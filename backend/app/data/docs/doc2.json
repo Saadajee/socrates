@@ -1,0 +1,7 @@
+[
+    {
+        "id": "doc2",
+        "title": "Basics of Machine Learning",
+        "body": "Machine learning is a subset of AI that allows systems to learn from data without being explicitly programmed. Techniques include supervised learning, unsupervised learning, and reinforcement learning. Popular algorithms are decision trees, neural networks, and support vector machines."
+    }
+]
