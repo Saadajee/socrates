@@ -1,0 +1,34 @@
+name: socrates
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - git
+  - curl
+  - pip:
+      # Core
+      - fastapi==0.115.0
+      - uvicorn[standard]==0.30.6
+      - python-multipart==0.0.9
+      - python-dotenv==1.1.1
+      # Auth
+      - passlib==1.7.4
+      - argon2-cffi==23.1.0
+      - python-jose[cryptography]==3.3.0
+      - pyjwt==2.10.1
+      - sqlalchemy==2.0.35
+      # Add this line (or replace any existing pydantic entry)
+      - pydantic[email]
+      # RAG stack
+      - langchain==0.3.27
+      - langchain-community==0.3.29
+      - langchain-ollama==0.3.10
+      - langchain-text-splitters==0.3.11
+      - faiss-cpu==1.9.0
+      - rank-bm25==0.2.2
+      - sentence-transformers==3.1.1
+      - ollama==0.6.0
+      - pypdf==5.1.0
+      - groq==0.36.0
+      - bcrypt==4.0.1
