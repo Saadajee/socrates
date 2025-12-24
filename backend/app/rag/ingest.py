@@ -59,7 +59,6 @@ def ingest_json_docs(all_chunks, metadata):
 
 
 def ingest_pdf_books(all_chunks, metadata):
-    """Ingest PDF books from BOOKS_PATH."""
     if not os.path.exists(BOOKS_PATH):
         print("No books directory found. Skipping PDF ingestion.")
         return
@@ -71,11 +70,21 @@ def ingest_pdf_books(all_chunks, metadata):
         path = os.path.join(BOOKS_PATH, fname)
         print(f"Ingesting PDF: {fname}")
 
-        reader = PdfReader(path)
+        try:
+            reader = PdfReader(path)
+        except Exception as e:
+            print(f"❌ Failed to open PDF {fname}: {e}")
+            continue
+
         full_text = ""
 
-        for page in reader.pages:
-            text = page.extract_text()
+        for page_num, page in enumerate(reader.pages):
+            try:
+                text = page.extract_text()
+            except Exception as e:
+                print(f"⚠️ Skipping page {page_num} in {fname}: {e}")
+                continue
+
             if text:
                 full_text += text + "\n"
 
