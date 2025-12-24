@@ -216,4 +216,5 @@ Fix by adding vercel.json:
 For bugs, feature requests, or integration help:
 
 📧 [saadimran7667@gmail.com](saadimran7667@gmail.com)
+
 Happy to collaborate, debug, or help you extend the project further.
