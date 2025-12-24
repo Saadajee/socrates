@@ -46,28 +46,30 @@ export default function Layout() {
 
       {/* Main content */}
       <div className="flex-1 flex flex-col w-full md:ml-0">
-        <header className="bg-parchment/90 backdrop-blur-sm shadow-lg gold-accent px-6 md:px-8 pt-7 md:pt-8 pb-7 md:pb-5 flex justify-between items-center relative z-30">
-          {/* Mobile menu button - only visible on small screens */}
-          <button
-            onClick={toggleMobileMenu}
-            className="md:hidden p-2 rounded-lg hover:bg-gold/20 transition"
-            aria-label="Open menu"
-          >
-            <svg className="w-8 h-8 text-deep" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+        <header className="bg-parchment/90 backdrop-blur-sm shadow-lg gold-accent px-4 md:px-8 pt-6 md:pt-8 pb-6 md:pb-5 flex justify-between items-center relative z-30">
+          <div className="flex items-center gap-4">
+            {/* Mobile menu button */}
+            <button
+              onClick={toggleMobileMenu}
+              className="md:hidden p-2 rounded-lg hover:bg-gold/20 transition"
+              aria-label="Open menu"
+            >
+              <svg className="w-7 h-7 text-deep" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
 
-          {/* Title - centered on mobile, left-aligned on desktop */}
-          <h1 className="text-3xl font-bold font-serif text-deep absolute left-1/2 -translate-x-1/2 md:relative md:left-auto md:translate-x-0">
-            Socrates
-          </h1>
+            {/* Title - left-aligned on mobile, centered only if no menu button */}
+            <h1 className="text-3xl font-bold font-serif text-deep">
+              Socrates
+            </h1>
+          </div>
 
-          {/* Logout button */}
+          {/* Logout button - smaller on mobile */}
           {currentUser && (
             <button
               onClick={handleLogout}
-              className="px-6 py-2 bg-gold/20 text-deep font-medium rounded-xl hover:bg-gold/40 transition border border-gold/30"
+              className="px-4 md:px-6 py-2 bg-gold/20 text-deep text-sm md:text-base font-medium rounded-xl hover:bg-gold/40 transition border border-gold/30"
             >
               Logout
             </button>
