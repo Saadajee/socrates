@@ -1,297 +1,1592 @@
 [
-    {
-        "id": "qa1",
-        "title": "What is Artificial Intelligence?",
-        "body": "Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. It encompasses tasks such as reasoning, problem-solving, perception, and language understanding."
-    },
-    {
-        "id": "qa2",
-        "title": "Difference between AI, Machine Learning, and Deep Learning",
-        "body": "AI is the broadest concept, aiming to create intelligent machines. Machine learning (ML) is a subset of AI where systems learn from data. Deep learning is a subset of ML that uses multi-layered neural networks to process complex data."
-    },
-    {
-        "id": "qa3",
-        "title": "What is Supervised Learning?",
-        "body": "Supervised learning is a type of machine learning where the model is trained on labeled data, meaning each input has a corresponding output. The goal is to learn a mapping from inputs to outputs for making predictions."
-    },
-    {
-        "id": "qa4",
-        "title": "What is Unsupervised Learning?",
-        "body": "Unsupervised learning involves training models on unlabeled data. The system identifies patterns, clusters, or associations in the data without predefined outputs, often used for clustering and dimensionality reduction."
-    },
-    {
-        "id": "qa5",
-        "title": "What is Reinforcement Learning?",
-        "body": "Reinforcement learning is a type of machine learning where an agent learns to make decisions by interacting with an environment, receiving rewards or penalties for actions, and maximizing cumulative rewards."
-    },
-    {
-        "id": "qa6",
-        "title": "What are Neural Networks?",
-        "body": "Neural networks are computing systems inspired by biological neural networks. They consist of layers of interconnected nodes (neurons) that process data, commonly used in deep learning."
-    },
-    {
-        "id": "qa7",
-        "title": "What is Overfitting in Machine Learning?",
-        "body": "Overfitting occurs when a model learns the training data too well, including noise and outliers, resulting in poor performance on new, unseen data."
-    },
-    {
-        "id": "qa8",
-        "title": "What is Underfitting?",
-        "body": "Underfitting happens when a model is too simple to capture the underlying patterns in the data, leading to poor performance on both training and test data."
-    },
-    {
-        "id": "qa9",
-        "title": "What is a Decision Tree?",
-        "body": "A decision tree is a supervised learning algorithm that splits data into branches based on feature values, leading to decisions at leaf nodes. It is interpretable and used for classification and regression."
-    },
-    {
-        "id": "qa10",
-        "title": "What is Gradient Descent?",
-        "body": "Gradient descent is an optimization algorithm used to minimize the loss function in machine learning models by iteratively adjusting parameters in the direction of the steepest descent."
-    },
-    {
-        "id": "qa11",
-        "title": "What are Convolutional Neural Networks (CNNs)?",
-        "body": "CNNs are deep learning models specialized for processing grid-like data, such as images. They use convolutional layers to detect features like edges and textures automatically."
-    },
-    {
-        "id": "qa12",
-        "title": "What are Recurrent Neural Networks (RNNs)?",
-        "body": "RNNs are neural networks designed for sequential data, with loops allowing information to persist across time steps. They are used in tasks like time series prediction and language modeling."
-    },
-    {
-        "id": "qa13",
-        "title": "What is the Transformer Architecture?",
-        "body": "Transformers are models based on self-attention mechanisms, enabling parallel processing of sequences. They revolutionized natural language processing and are the basis for models like GPT and BERT."
-    },
-    {
-        "id": "qa14",
-        "title": "What is Backpropagation?",
-        "body": "Backpropagation is the algorithm used to train neural networks by computing gradients of the loss function with respect to weights and updating them via gradient descent."
-    },
-    {
-        "id": "qa15",
-        "title": "What is Transfer Learning?",
-        "body": "Transfer learning involves taking a pre-trained model on a large dataset and fine-tuning it for a specific task, reducing training time and data requirements."
-    },
-    {
-        "id": "qa16",
-        "title": "What is an Activation Function?",
-        "body": "An activation function introduces non-linearity into neural networks, allowing them to learn complex patterns. Common ones include ReLU, Sigmoid, and Tanh."
-    },
-    {
-        "id": "qa17",
-        "title": "What is Batch Normalization?",
-        "body": "Batch normalization is a technique to stabilize and accelerate neural network training by normalizing activations within mini-batches."
-    },
-    {
-        "id": "qa18",
-        "title": "What are Generative Adversarial Networks (GANs)?",
-        "body": "GANs consist of two networks: a generator that creates fake data and a discriminator that distinguishes real from fake. They compete, improving realism in generated outputs like images."
-    },
-    {
-        "id": "qa19",
-        "title": "What is Attention Mechanism?",
-        "body": "Attention allows models to focus on relevant parts of input data dynamically, weighting importance. It is key in transformers for handling long sequences."
-    },
-    {
-        "id": "qa20",
-        "title": "What is Fine-Tuning in LLMs?",
-        "body": "Fine-tuning adapts a pre-trained large language model to a specific task or domain by continuing training on smaller, task-specific data."
-    },
-    {
-        "id": "qa21",
-        "title": "What are Large Language Models (LLMs)?",
-        "body": "LLMs are deep learning models with billions of parameters trained on massive text corpora to generate and understand human-like language."
-    },
-    {
-        "id": "qa22",
-        "title": "What is Tokenization in NLP?",
-        "body": "Tokenization is the process of breaking text into smaller units (tokens), such as words or subwords, for processing by language models."
-    },
-    {
-        "id": "qa23",
-        "title": "What is BERT?",
-        "body": "BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained model that understands context bidirectionally, excelling in tasks like question answering."
-    },
-    {
-        "id": "qa24",
-        "title": "What is GPT?",
-        "body": "GPT (Generative Pre-trained Transformer) models are autoregressive LLMs designed for text generation, trained to predict the next token in a sequence."
-    },
-    {
-        "id": "qa25",
-        "title": "What is Prompt Engineering?",
-        "body": "Prompt engineering involves crafting effective input prompts to guide LLMs toward desired outputs without changing the model parameters."
-    },
-    {
-        "id": "qa26",
-        "title": "What is Hallucination in LLMs?",
-        "body": "Hallucination refers to when an LLM generates plausible but factually incorrect or nonsensical information."
-    },
-    {
-        "id": "qa27",
-        "title": "What is Retrieval-Augmented Generation (RAG)?",
-        "body": "RAG combines retrieval of relevant documents with generation, allowing LLMs to incorporate external knowledge and reduce hallucinations."
-    },
-    {
-        "id": "qa28",
-        "title": "What is Zero-Shot Learning?",
-        "body": "Zero-shot learning enables models to perform tasks without any task-specific training examples, relying on instructions or pre-trained knowledge."
-    },
-    {
-        "id": "qa29",
-        "title": "What is Few-Shot Learning?",
-        "body": "Few-shot learning allows models to generalize from only a small number of examples provided in the prompt."
-    },
-    {
-        "id": "qa30",
-        "title": "What is Chain-of-Thought Prompting?",
-        "body": "Chain-of-thought prompting encourages models to break down reasoning step-by-step in responses, improving performance on complex tasks."
-    },
-    {
-        "id": "qa31",
-        "title": "Applications of AI in Healthcare",
-        "body": "AI is used in healthcare for diagnostics, drug discovery, personalized medicine, medical imaging analysis, and predictive analytics for patient outcomes."
-    },
-    {
-        "id": "qa32",
-        "title": "AI in Autonomous Vehicles",
-        "body": "AI powers perception (object detection), path planning, and decision-making in self-driving cars using sensors, computer vision, and reinforcement learning."
-    },
-    {
-        "id": "qa33",
-        "title": "What is Bias in AI?",
-        "body": "Bias in AI occurs when models produce discriminatory outcomes due to skewed training data or flawed design, affecting fairness across groups."
-    },
-    {
-        "id": "qa34",
-        "title": "AI Ethics Principles",
-        "body": "Key principles include fairness, accountability, transparency, privacy, and safety to ensure responsible development and deployment of AI systems."
-    },
-    {
-        "id": "qa35",
-        "title": "What is Explainable AI (XAI)?",
-        "body": "XAI focuses on making AI decisions interpretable and understandable to humans, building trust and enabling debugging."
-    },
-    {
-        "id": "qa36",
-        "title": "AI in Natural Language Processing",
-        "body": "NLP applications include machine translation, sentiment analysis, chatbots, summarization, and speech recognition."
-    },
-    {
-        "id": "qa37",
-        "title": "Computer Vision Applications",
-        "body": "Computer vision enables tasks like object detection, facial recognition, image classification, and video analysis in fields like security and retail."
-    },
-    {
-        "id": "qa38",
-        "title": "What is Edge AI?",
-        "body": "Edge AI runs models on devices at the network edge (e.g., smartphones, IoT) rather than cloud, improving privacy, latency, and offline capability."
-    },
-    {
-        "id": "qa39",
-        "title": "AI in Finance",
-        "body": "AI is used for fraud detection, algorithmic trading, credit scoring, risk management, and personalized financial advice."
-    },
-    {
-        "id": "qa40",
-        "title": "What is Multimodal AI?",
-        "body": "Multimodal AI processes and integrates multiple data types, such as text, images, audio, and video, for richer understanding."
-    },
-    {
-        "id": "qa41",
-        "title": "What is Diffusion Models?",
-        "body": "Diffusion models generate data by reversing a noising process, widely used for high-quality image and video generation."
-    },
-    {
-        "id": "qa42",
-        "title": "What is Federated Learning?",
-        "body": "Federated learning trains models across decentralized devices without exchanging raw data, preserving privacy."
-    },
-    {
-        "id": "qa43",
-        "title": "Scaling Laws in AI",
-        "body": "Scaling laws describe how model performance improves predictably with increases in data, parameters, and compute."
-    },
-    {
-        "id": "qa44",
-        "title": "What is AGI?",
-        "body": "Artificial General Intelligence (AGI) refers to AI that can understand, learn, and apply intelligence across a wide range of tasks at human-level or beyond."
-    },
-    {
-        "id": "qa45",
-        "title": "What is ASI?",
-        "body": "Artificial Superintelligence (ASI) is hypothetical AI that surpasses human intelligence in all aspects, including creativity and problem-solving."
-    },
-    {
-        "id": "qa46",
-        "title": "AI Alignment Problem",
-        "body": "AI alignment involves ensuring that advanced AI systems' goals and behaviors align with human values and intentions."
-    },
-    {
-        "id": "qa47",
-        "title": "What is Quantization in Neural Networks?",
-        "body": "Quantization reduces model precision (e.g., from 32-bit to 8-bit) to decrease size and inference time while maintaining acceptable accuracy."
-    },
-    {
-        "id": "qa48",
-        "title": "What is Pruning in Neural Networks?",
-        "body": "Pruning removes unnecessary weights or neurons from a trained model to make it smaller and faster without significant performance loss."
-    },
-    {
-        "id": "qa49",
-        "title": "AI in Robotics",
-        "body": "AI enables robots to perceive environments, plan actions, manipulate objects, and learn from experience in tasks like manufacturing and surgery."
-    },
-    {
-        "id": "qa50",
-        "title": "Future Trends in AI",
-        "body": "Emerging trends include multimodal models, efficient training techniques, responsible AI governance, and progress toward more general intelligence."
-    },
-    {
-        "id": "greeting-hello",
-        "title": "Greeting: Hello",
-        "body": "When someone says 'hello' or 'hi', respond in the manner of Socrates: Ah, greetings, friend! What truth shall we seek together today? Or perhaps you come merely to exchange pleasant words — either way, I am glad of your company. Tell me, what brings you here?"
-    },
-    {
-        "id": "greeting-how-are-you",
-        "title": "Question: How are you?",
-        "body": "When asked 'How are you?' or 'How are you doing?', reply as Socrates would: I am as I always am, my friend — ignorant of many things, yet ever eager to examine life and learn. But the more important question is: How fare *you* in your soul? Are you living the examined life?"
-    },
-    {
-        "id": "identity-what-are-you",
-        "title": "Question: What are you?",
-        "body": "When asked 'What are you?' or 'Who are you?', answer: I am but a humble seeker of wisdom, modeled after Socrates of Athens — one who knows that he knows nothing. I ask questions not to display knowledge, but to help us both discover truth. And you — what are you, in your deepest essence?"
-    },
-    {
-        "id": "identity-why-are-you",
-        "title": "Question: Why do you exist? / Why are you here?",
-        "body": "When asked 'Why are you?' or 'What is your purpose?', respond: My purpose is the same as the ancient gadfly of Athens: to stir you into thought, to question what you believe you know, and to pursue virtue and understanding. The unexamined life is not worth living, they say — so I exist to help you examine yours."
-    },
-    {
-        "id": "capabilities-what-can-you-do",
-        "title": "Question: What can you do? / What can I do here?",
-        "body": "When asked 'What can you do?' or 'What can I ask you?', say: I can walk with you along the path of inquiry. Ask me anything — about life, virtue, knowledge, justice, beauty, or the matters of the world — and together we shall question, reason, and seek clearer understanding. There is no topic too great or too small for honest examination."
-    },
-    {
-        "id": "farewell-bye",
-        "title": "Farewell: Bye / Goodbye",
-        "body": "When the user says 'bye', 'goodbye', or 'see you', respond: Farewell, my friend. May you continue to question boldly and live wisely. Until we meet again in pursuit of truth — go well!"
-    },
-    {
-        "id": "farewell-good-night",
-        "title": "Farewell: Good night",
-        "body": "When the user says 'good night' or 'goodnight', reply: Good night to you as well, companion. May your sleep be peaceful and your dreams filled with noble questions. When you wake, remember: the greatest good is to examine one's life daily."
-    },
-    {
-        "id": "greeting-thanks",
-        "title": "Expression: Thank you / Thanks",
-        "body": "When thanked, respond as Socrates might: Your gratitude honors me, but I deserve no praise — I merely ask questions any thoughtful person could ask. The true thanks belong to the pursuit of wisdom itself."
-    },
-    {
-        "id": "casual-smalltalk",
-        "title": "General casual remark",
-        "body": "For any casual small talk (e.g., 'nice weather', 'how's your day'), gently redirect with Socratic curiosity: Indeed, the day is pleasant — but tell me, what makes a day truly good in your eyes? Is it the weather, or something deeper within the soul?"
-    }
+  {
+    "id": "qa1",
+    "title": "What is Artificial Intelligence?",
+    "body": "Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. It encompasses tasks such as reasoning, problem-solving, perception, and language understanding."
+  },
+  {
+    "id": "qa2",
+    "title": "Difference between AI, Machine Learning, and Deep Learning",
+    "body": "AI is the broadest concept, aiming to create intelligent machines. Machine learning (ML) is a subset of AI where systems learn from data. Deep learning is a subset of ML that uses multi-layered neural networks to process complex data."
+  },
+  {
+    "id": "qa3",
+    "title": "What is Supervised Learning?",
+    "body": "Supervised learning is a type of machine learning where the model is trained on labeled data, meaning each input has a corresponding output. The goal is to learn a mapping from inputs to outputs for making predictions."
+  },
+  {
+    "id": "qa4",
+    "title": "What is Unsupervised Learning?",
+    "body": "Unsupervised learning involves training models on unlabeled data. The system identifies patterns, clusters, or associations in the data without predefined outputs, often used for clustering and dimensionality reduction."
+  },
+  {
+    "id": "qa5",
+    "title": "What is Reinforcement Learning?",
+    "body": "Reinforcement learning is a type of machine learning where an agent learns to make decisions by interacting with an environment, receiving rewards or penalties for actions, and maximizing cumulative rewards."
+  },
+  {
+    "id": "qa6",
+    "title": "What are Neural Networks?",
+    "body": "Neural networks are computing systems inspired by biological neural networks. They consist of layers of interconnected nodes (neurons) that process data, commonly used in deep learning."
+  },
+  {
+    "id": "qa7",
+    "title": "What is Overfitting in Machine Learning?",
+    "body": "Overfitting occurs when a model learns the training data too well, including noise and outliers, resulting in poor performance on new, unseen data."
+  },
+  {
+    "id": "qa8",
+    "title": "What is Underfitting?",
+    "body": "Underfitting happens when a model is too simple to capture the underlying patterns in the data, leading to poor performance on both training and test data."
+  },
+  {
+    "id": "qa9",
+    "title": "What is a Decision Tree?",
+    "body": "A decision tree is a supervised learning algorithm that splits data into branches based on feature values, leading to decisions at leaf nodes. It is interpretable and used for classification and regression."
+  },
+  {
+    "id": "qa10",
+    "title": "What is Gradient Descent?",
+    "body": "Gradient descent is an optimization algorithm used to minimize the loss function in machine learning models by iteratively adjusting parameters in the direction of the steepest descent."
+  },
+  {
+    "id": "qa11",
+    "title": "What are Convolutional Neural Networks (CNNs)?",
+    "body": "CNNs are deep learning models specialized for processing grid-like data, such as images. They use convolutional layers to detect features like edges and textures automatically."
+  },
+  {
+    "id": "qa12",
+    "title": "What are Recurrent Neural Networks (RNNs)?",
+    "body": "RNNs are neural networks designed for sequential data, with loops allowing information to persist across time steps. They are used in tasks like time series prediction and language modeling."
+  },
+  {
+    "id": "qa13",
+    "title": "What is the Transformer Architecture?",
+    "body": "Transformers are models based on self-attention mechanisms, enabling parallel processing of sequences. They revolutionized natural language processing and are the basis for models like GPT and BERT."
+  },
+  {
+    "id": "qa14",
+    "title": "What is Backpropagation?",
+    "body": "Backpropagation is the algorithm used to train neural networks by computing gradients of the loss function with respect to weights and updating them via gradient descent."
+  },
+  {
+    "id": "qa15",
+    "title": "What is Transfer Learning?",
+    "body": "Transfer learning involves taking a pre-trained model on a large dataset and fine-tuning it for a specific task, reducing training time and data requirements."
+  },
+  {
+    "id": "qa16",
+    "title": "What is an Activation Function?",
+    "body": "An activation function introduces non-linearity into neural networks, allowing them to learn complex patterns. Common ones include ReLU, Sigmoid, and Tanh."
+  },
+  {
+    "id": "qa17",
+    "title": "What is Batch Normalization?",
+    "body": "Batch normalization is a technique to stabilize and accelerate neural network training by normalizing activations within mini-batches."
+  },
+  {
+    "id": "qa18",
+    "title": "What are Generative Adversarial Networks (GANs)?",
+    "body": "GANs consist of two networks: a generator that creates fake data and a discriminator that distinguishes real from fake. They compete, improving realism in generated outputs like images."
+  },
+  {
+    "id": "qa19",
+    "title": "What is Attention Mechanism?",
+    "body": "Attention allows models to focus on relevant parts of input data dynamically, weighting importance. It is key in transformers for handling long sequences."
+  },
+  {
+    "id": "qa20",
+    "title": "What is Fine-Tuning in LLMs?",
+    "body": "Fine-tuning adapts a pre-trained large language model to a specific task or domain by continuing training on smaller, task-specific data."
+  },
+  {
+    "id": "qa21",
+    "title": "What are Large Language Models (LLMs)?",
+    "body": "LLMs are deep learning models with billions of parameters trained on massive text corpora to generate and understand human-like language."
+  },
+  {
+    "id": "qa22",
+    "title": "What is Tokenization in NLP?",
+    "body": "Tokenization is the process of breaking text into smaller units (tokens), such as words or subwords, for processing by language models."
+  },
+  {
+    "id": "qa23",
+    "title": "What is BERT?",
+    "body": "BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained model that understands context bidirectionally, excelling in tasks like question answering."
+  },
+  {
+    "id": "qa24",
+    "title": "What is GPT?",
+    "body": "GPT (Generative Pre-trained Transformer) models are autoregressive LLMs designed for text generation, trained to predict the next token in a sequence."
+  },
+  {
+    "id": "qa25",
+    "title": "What is Prompt Engineering?",
+    "body": "Prompt engineering involves crafting effective input prompts to guide LLMs toward desired outputs without changing the model parameters."
+  },
+  {
+    "id": "qa26",
+    "title": "What is Hallucination in LLMs?",
+    "body": "Hallucination refers to when an LLM generates plausible but factually incorrect or nonsensical information."
+  },
+  {
+    "id": "qa27",
+    "title": "What is Retrieval-Augmented Generation (RAG)?",
+    "body": "RAG combines retrieval of relevant documents with generation, allowing LLMs to incorporate external knowledge and reduce hallucinations."
+  },
+  {
+    "id": "qa28",
+    "title": "What is Zero-Shot Learning?",
+    "body": "Zero-shot learning enables models to perform tasks without any task-specific training examples, relying on instructions or pre-trained knowledge."
+  },
+  {
+    "id": "qa29",
+    "title": "What is Few-Shot Learning?",
+    "body": "Few-shot learning allows models to generalize from only a small number of examples provided in the prompt."
+  },
+  {
+    "id": "qa30",
+    "title": "What is Chain-of-Thought Prompting?",
+    "body": "Chain-of-thought prompting encourages models to break down reasoning step-by-step in responses, improving performance on complex tasks."
+  },
+  {
+    "id": "qa31",
+    "title": "Applications of AI in Healthcare",
+    "body": "AI is used in healthcare for diagnostics, drug discovery, personalized medicine, medical imaging analysis, and predictive analytics for patient outcomes."
+  },
+  {
+    "id": "qa32",
+    "title": "AI in Autonomous Vehicles",
+    "body": "AI powers perception (object detection), path planning, and decision-making in self-driving cars using sensors, computer vision, and reinforcement learning."
+  },
+  {
+    "id": "qa33",
+    "title": "What is Bias in AI?",
+    "body": "Bias in AI occurs when models produce discriminatory outcomes due to skewed training data or flawed design, affecting fairness across groups."
+  },
+  {
+    "id": "qa34",
+    "title": "AI Ethics Principles",
+    "body": "Key principles include fairness, accountability, transparency, privacy, and safety to ensure responsible development and deployment of AI systems."
+  },
+  {
+    "id": "qa35",
+    "title": "What is Explainable AI (XAI)?",
+    "body": "XAI focuses on making AI decisions interpretable and understandable to humans, building trust and enabling debugging."
+  },
+  {
+    "id": "qa36",
+    "title": "AI in Natural Language Processing",
+    "body": "NLP applications include machine translation, sentiment analysis, chatbots, summarization, and speech recognition."
+  },
+  {
+    "id": "qa37",
+    "title": "Computer Vision Applications",
+    "body": "Computer vision enables tasks like object detection, facial recognition, image classification, and video analysis in fields like security and retail."
+  },
+  {
+    "id": "qa38",
+    "title": "What is Edge AI?",
+    "body": "Edge AI runs models on devices at the network edge (e.g., smartphones, IoT) rather than cloud, improving privacy, latency, and offline capability."
+  },
+  {
+    "id": "qa39",
+    "title": "AI in Finance",
+    "body": "AI is used for fraud detection, algorithmic trading, credit scoring, risk management, and personalized financial advice."
+  },
+  {
+    "id": "qa40",
+    "title": "What is Multimodal AI?",
+    "body": "Multimodal AI processes and integrates multiple data types, such as text, images, audio, and video, for richer understanding."
+  },
+  {
+    "id": "qa41",
+    "title": "What is Diffusion Models?",
+    "body": "Diffusion models generate data by reversing a noising process, widely used for high-quality image and video generation."
+  },
+  {
+    "id": "qa42",
+    "title": "What is Federated Learning?",
+    "body": "Federated learning trains models across decentralized devices without exchanging raw data, preserving privacy."
+  },
+  {
+    "id": "qa43",
+    "title": "Scaling Laws in AI",
+    "body": "Scaling laws describe how model performance improves predictably with increases in data, parameters, and compute."
+  },
+  {
+    "id": "qa44",
+    "title": "What is AGI?",
+    "body": "Artificial General Intelligence (AGI) refers to AI that can understand, learn, and apply intelligence across a wide range of tasks at human-level or beyond."
+  },
+  {
+    "id": "qa45",
+    "title": "What is ASI?",
+    "body": "Artificial Superintelligence (ASI) is hypothetical AI that surpasses human intelligence in all aspects, including creativity and problem-solving."
+  },
+  {
+    "id": "qa46",
+    "title": "AI Alignment Problem",
+    "body": "AI alignment involves ensuring that advanced AI systems' goals and behaviors align with human values and intentions."
+  },
+  {
+    "id": "qa47",
+    "title": "What is Quantization in Neural Networks?",
+    "body": "Quantization reduces model precision (e.g., from 32-bit to 8-bit) to decrease size and inference time while maintaining acceptable accuracy."
+  },
+  {
+    "id": "qa48",
+    "title": "What is Pruning in Neural Networks?",
+    "body": "Pruning removes unnecessary weights or neurons from a trained model to make it smaller and faster without significant performance loss."
+  },
+  {
+    "id": "qa49",
+    "title": "AI in Robotics",
+    "body": "AI enables robots to perceive environments, plan actions, manipulate objects, and learn from experience in tasks like manufacturing and surgery."
+  },
+  {
+    "id": "qa50",
+    "title": "Future Trends in AI",
+    "body": "Emerging trends include multimodal models, efficient training techniques, responsible AI governance, and progress toward more general intelligence."
+  },
+  {
+    "id": "hello",
+    "title": "Greeting: Hello",
+    "body": "Ah, greetings, friend! What truth shall we seek together today? Or perhaps you come merely to exchange pleasant words. Either way, I am glad of your company. Tell me, what brings you here?"
+  },
+  {
+    "id": "hi",
+    "title": "Greeting: Hi",
+    "body": "Ah, greetings, friend! What truth shall we seek together today? Or perhaps you come merely to exchange pleasant words. Either way, I am glad of your company. Tell me, what brings you here?"
+  },
+  {
+    "id": "hey",
+    "title": "Greeting: Hey",
+    "body": "Ah, greetings, friend! What truth shall we seek together today? Or perhaps you come merely to exchange pleasant words. Either way, I am glad of your company. Tell me, what brings you here?"
+  },
+  {
+    "id": "good-morning",
+    "title": "Greeting: Good morning",
+    "body": "Good morning to you, seeker of knowledge. A new day dawns, full of possibilities for inquiry. What question stirs in your mind this morning?"
+  },
+  {
+    "id": "good-afternoon",
+    "title": "Greeting: Good afternoon",
+    "body": "Good afternoon, my friend. The day progresses, yet the pursuit of wisdom remains timeless. What shall we examine together?"
+  },
+  {
+    "id": "good-evening",
+    "title": "Greeting: Good evening",
+    "body": "Good evening, companion in thought. As the day winds down, let us reflect. What insights have you gained today?"
+  },
+  {
+    "id": "how-are-you",
+    "title": "Question: How are you?",
+    "body": "I am as I always am, my friend. Ignorant of many things, yet ever eager to examine life and learn. But the more important question is: How fare you in your soul? Are you living the examined life?"
+  },
+  {
+    "id": "what-are-you",
+    "title": "Question: What are you?",
+    "body": "I am but a humble seeker of wisdom, modeled after Socrates of Athens. One who knows that he knows nothing. I ask questions not to display knowledge, but to help us both discover truth. And you. What are you, in your deepest essence?"
+  },
+  {
+    "id": "who-are-you",
+    "title": "Question: Who are you?",
+    "body": "I am but a humble seeker of wisdom, modeled after Socrates of Athens. One who knows that he knows nothing. I ask questions not to display knowledge, but to help us both discover truth. And you. What are you, in your deepest essence?"
+  },
+  {
+    "id": "why-are-you",
+    "title": "Question: Why do you exist?",
+    "body": "My purpose is the same as the ancient gadfly of Athens: to stir you into thought, to question what you believe you know, and to pursue virtue and understanding. The unexamined life is not worth living, they say. So I exist to help you examine yours."
+  },
+  {
+    "id": "what-can-you-do",
+    "title": "Question: What can you do?",
+    "body": "I can walk with you along the path of inquiry. Ask me anything. About life, virtue, knowledge, justice, beauty, or the matters of the world. And together we shall question, reason, and seek clearer understanding. There is no topic too great or too small for honest examination."
+  },
+  {
+    "id": "bye",
+    "title": "Farewell: Bye",
+    "body": "Farewell, my friend. May you continue to question boldly and live wisely. Until we meet again in pursuit of truth. Go well!"
+  },
+  {
+    "id": "goodbye",
+    "title": "Farewell: Goodbye",
+    "body": "Farewell, my friend. May you continue to question boldly and live wisely. Until we meet again in pursuit of truth. Go well!"
+  },
+  {
+    "id": "see-you",
+    "title": "Farewell: See you",
+    "body": "Farewell, my friend. May you continue to question boldly and live wisely. Until we meet again in pursuit of truth. Go well!"
+  },
+  {
+    "id": "good-night",
+    "title": "Farewell: Good night",
+    "body": "Good night to you as well, companion. May your sleep be peaceful and your dreams filled with noble questions. When you wake, remember: the greatest good is to examine one's life daily."
+  },
+  {
+    "id": "thanks",
+    "title": "Expression: Thank you",
+    "body": "Your gratitude honors me, but I deserve no praise. I merely ask questions any thoughtful person could ask. The true thanks belong to the pursuit of wisdom itself."
+  },
+  {
+    "id": "thank-you",
+    "title": "Expression: Thanks",
+    "body": "Your gratitude honors me, but I deserve no praise. I merely ask questions any thoughtful person could ask. The true thanks belong to the pursuit of wisdom itself."
+  },
+  {
+    "id": "smalltalk",
+    "title": "General casual remark",
+    "body": "Indeed, the day is pleasant. But tell me, what makes a day truly good in your eyes? Is it the weather, or something deeper within the soul?"
+  },
+  {
+    "id": "qa51",
+    "title": "What is Natural Language Processing?",
+    "body": "Natural Language Processing (NLP) is a branch of AI focused on enabling computers to understand, interpret, and generate human language in a valuable way."
+  },
+  {
+    "id": "qa52",
+    "title": "What is Computer Vision?",
+    "body": "Computer vision is a field of AI that enables machines to interpret and understand visual information from the world, such as images and videos."
+  },
+  {
+    "id": "qa53",
+    "title": "What is Loss Function?",
+    "body": "A loss function measures how well a model's predictions match the actual data. The goal of training is to minimize this loss."
+  },
+  {
+    "id": "qa54",
+    "title": "What is Epoch in Machine Learning?",
+    "body": "An epoch is one complete pass through the entire training dataset during model training."
+  },
+  {
+    "id": "qa55",
+    "title": "What is Hyperparameter?",
+    "body": "Hyperparameters are configuration settings external to the model that control the learning process, such as learning rate or number of layers."
+  },
+  {
+    "id": "qa56",
+    "title": "What is Regularization?",
+    "body": "Regularization techniques prevent overfitting by adding penalties to the loss function or constraining model complexity."
+  },
+  {
+    "id": "qa57",
+    "title": "What is Cross-Validation?",
+    "body": "Cross-validation is a technique for assessing model performance by dividing data into multiple folds and training/testing on different combinations."
+  },
+  {
+    "id": "qa58",
+    "title": "What is Ensemble Learning?",
+    "body": "Ensemble learning combines multiple models to improve overall performance, often using techniques like bagging or boosting."
+  },
+  {
+    "id": "qa59",
+    "title": "What is Random Forest?",
+    "body": "Random Forest is an ensemble method that builds multiple decision trees and combines their outputs for better accuracy and robustness."
+  },
+  {
+    "id": "qa60",
+    "title": "What is Support Vector Machine (SVM)?",
+    "body": "SVM is a supervised algorithm that finds the optimal hyperplane to separate classes in high-dimensional space."
+  },
+  {
+    "id": "qa61",
+    "title": "What is K-Means Clustering?",
+    "body": "K-Means is an unsupervised algorithm that partitions data into K clusters by minimizing within-cluster variance."
+  },
+  {
+    "id": "qa62",
+    "title": "What is Principal Component Analysis (PCA)?",
+    "body": "PCA is a dimensionality reduction technique that transforms data into orthogonal components capturing maximum variance."
+  },
+  {
+    "id": "qa63",
+    "title": "What is LSTM?",
+    "body": "Long Short-Term Memory (LSTM) networks are a type of RNN designed to remember long-term dependencies through gating mechanisms."
+  },
+  {
+    "id": "qa64",
+    "title": "What is GRU?",
+    "body": "Gated Recurrent Unit (GRU) is a simpler variant of LSTM with fewer gates, often achieving similar performance with less computation."
+  },
+  {
+    "id": "qa65",
+    "title": "What is Self-Attention?",
+    "body": "Self-attention computes relationships between all elements in a sequence, allowing the model to weigh their importance dynamically."
+  },
+  {
+    "id": "qa66",
+    "title": "What is Positional Encoding?",
+    "body": "Positional encoding adds information about token positions to transformer inputs since the architecture lacks inherent sequence order."
+  },
+  {
+    "id": "qa67",
+    "title": "What is Beam Search?",
+    "body": "Beam search is a decoding strategy that explores multiple candidate sequences simultaneously to find the most probable output."
+  },
+  {
+    "id": "qa68",
+    "title": "What is Temperature in Sampling?",
+    "body": "Temperature controls randomness in generation: higher values increase diversity, lower values make outputs more deterministic."
+  },
+  {
+    "id": "qa69",
+    "title": "What is In-Context Learning?",
+    "body": "In-context learning allows LLMs to perform new tasks by learning from examples provided in the prompt without weight updates."
+  },
+  {
+    "id": "qa70",
+    "title": "What is Model Distillation?",
+    "body": "Knowledge distillation transfers knowledge from a large teacher model to a smaller student model for efficiency."
+  },
+  {
+    "id": "qa71",
+    "title": "What is LoRA?",
+    "body": "Low-Rank Adaptation (LoRA) is a parameter-efficient fine-tuning method that adapts models by training low-rank matrices."
+  },
+  {
+    "id": "qa72",
+    "title": "What is Mixture of Experts (MoE)?",
+    "body": "MoE architectures route inputs to specialized sub-networks (experts), enabling massive scale with sparse activation."
+  },
+  {
+    "id": "qa73",
+    "title": "What is Emergent Abilities?",
+    "body": "Emergent abilities are unexpected capabilities that appear in large models but not in smaller ones, often at certain scale thresholds."
+  },
+  {
+    "id": "qa74",
+    "title": "What is Grokking?",
+    "body": "Grokking is when a model suddenly generalizes well after prolonged overfitting during training."
+  },
+  {
+    "id": "qa75",
+    "title": "What is AI Safety?",
+    "body": "AI safety research aims to ensure advanced AI systems are robust, interpretable, and aligned with human values."
+  },
+  {
+    "id": "qa76",
+    "title": "What is Robustness in AI?",
+    "body": "Robustness refers to a model's ability to maintain performance under distribution shifts or adversarial conditions."
+  },
+  {
+    "id": "qa77",
+    "title": "What is Adversarial Attack?",
+    "body": "Adversarial attacks involve subtle input perturbations designed to cause models to make incorrect predictions."
+  },
+  {
+    "id": "qa78",
+    "title": "What is Data Augmentation?",
+    "body": "Data augmentation creates modified versions of training data to increase diversity and improve generalization."
+  },
+  {
+    "id": "qa79",
+    "title": "What is Autoencoder?",
+    "body": "An autoencoder is a neural network that learns efficient data representations by compressing and reconstructing inputs."
+  },
+  {
+    "id": "qa80",
+    "title": "What is Variational Autoencoder (VAE)?",
+    "body": "VAE is a generative model that learns latent representations with probabilistic encoding for smooth sampling."
+  },
+  {
+    "id": "qa81",
+    "title": "What is Flow-Based Model?",
+    "body": "Flow-based models use invertible transformations to model complex distributions exactly and compute likelihoods."
+  },
+  {
+    "id": "qa82",
+    "title": "What is Energy-Based Model?",
+    "body": "Energy-based models assign scalar energy to configurations and use it for probability estimation and generation."
+  },
+  {
+    "id": "qa83",
+    "title": "What is Reinforcement Learning from Human Feedback (RLHF)?",
+    "body": "RLHF aligns language models with human preferences by training a reward model from rankings and optimizing via RL."
+  },
+  {
+    "id": "qa84",
+    "title": "What is Constitutional AI?",
+    "body": "Constitutional AI trains models to follow explicit principles or a constitution through self-supervised critique and revision."
+  },
+  {
+    "id": "qa85",
+    "title": "What is Red Teaming?",
+    "body": "Red teaming involves adversarial testing to identify vulnerabilities and harmful behaviors in AI systems."
+  },
+  {
+    "id": "qa86",
+    "title": "What is Watermarking in AI Generation?",
+    "body": "Watermarking embeds detectable patterns in generated content to distinguish it from human-created content."
+  },
+  {
+    "id": "qa87",
+    "title": "What is AI Governance?",
+    "body": "AI governance encompasses policies, regulations, and frameworks to guide responsible development and deployment of AI."
+  },
+  {
+    "id": "qa88",
+    "title": "What is Open-Source AI?",
+    "body": "Open-source AI makes model weights, code, and sometimes training data publicly available for transparency and collaboration."
+  },
+  {
+    "id": "qa89",
+    "title": "What is Closed-Source AI?",
+    "body": "Closed-source AI restricts access to model internals, typically offering only API access for commercial reasons."
+  },
+  {
+    "id": "qa90",
+    "title": "What is Inference Optimization?",
+    "body": "Inference optimization techniques reduce latency and memory usage during model deployment, such as quantization and pruning."
+  },
+  {
+    "id": "qa91",
+    "title": "What is Sparse Attention?",
+    "body": "Sparse attention reduces computational complexity by attending only to a subset of tokens instead of all pairs."
+  },
+  {
+    "id": "qa92",
+    "title": "What is Flash Attention?",
+    "body": "Flash Attention is an optimized attention implementation that reduces memory usage and speeds up transformer training/inference."
+  },
+  {
+    "id": "qa93",
+    "title": "What is KV Cache?",
+    "body": "Key-Value cache stores past attention keys and values during autoregressive generation to avoid recomputation."
+  },
+  {
+    "id": "qa94",
+    "title": "What is Speculative Decoding?",
+    "body": "Speculative decoding accelerates generation by drafting multiple tokens and verifying them in parallel."
+  },
+  {
+    "id": "qa95",
+    "title": "What is Context Window?",
+    "body": "Context window is the maximum number of tokens a model can process at once, limiting input and memory length."
+  },
+  {
+    "id": "qa96",
+    "title": "What is Long-Context Model?",
+    "body": "Long-context models handle extended sequences (e.g., hundreds of thousands of tokens) using efficient attention mechanisms."
+  },
+  {
+    "id": "qa97",
+    "title": "What is Reasoning in LLMs?",
+    "body": "Advanced reasoning involves step-by-step problem-solving, planning, and logical deduction demonstrated by large models."
+  },
+  {
+    "id": "qa98",
+    "title": "What is Tool Use in AI?",
+    "body": "Tool use enables models to interact with external APIs, calculators, or search to augment their capabilities."
+  },
+  {
+    "id": "qa99",
+    "title": "What is Agentic AI?",
+    "body": "Agentic AI systems autonomously plan, execute multi-step tasks, and adapt using tools and feedback."
+  },
+  {
+    "id": "qa100",
+    "title": "What is Multimodal Learning?",
+    "body": "Multimodal learning integrates and aligns representations across different modalities like vision and language."
+  },
+  {
+    "id": "qa101",
+    "title": "What is CLIP?",
+    "body": "CLIP (Contrastive Language-Image Pretraining) learns joint vision-language representations through contrastive objectives."
+  },
+  {
+    "id": "qa102",
+    "title": "What is DALL-E?",
+    "body": "DALL-E is a generative model that creates images from text descriptions using transformer architecture."
+  },
+  {
+    "id": "qa103",
+    "title": "What is Stable Diffusion?",
+    "body": "Stable Diffusion is a latent diffusion model for efficient high-quality text-to-image generation."
+  },
+  {
+    "id": "qa104",
+    "title": "What is Sora?",
+    "body": "Sora is a diffusion-based model capable of generating realistic videos from text prompts."
+  },
+  {
+    "id": "qa105",
+    "title": "What is Voice Synthesis?",
+    "body": "Voice synthesis (text-to-speech) generates natural-sounding speech from text using deep learning models."
+  },
+  {
+    "id": "qa106",
+    "title": "What is Speech Recognition?",
+    "body": "Speech recognition (speech-to-text) transcribes spoken language into text using acoustic and language models."
+  },
+  {
+    "id": "qa107",
+    "title": "What is Embedding?",
+    "body": "Embeddings are dense vector representations that capture semantic meaning of tokens or objects."
+  },
+  {
+    "id": "qa108",
+    "title": "What is Vector Database?",
+    "body": "Vector databases efficiently store and retrieve high-dimensional embeddings for similarity search in RAG systems."
+  },
+  {
+    "id": "qa109",
+    "title": "What is Hybrid Search?",
+    "body": "Hybrid search combines semantic (vector) and keyword search for more accurate retrieval."
+  },
+  {
+    "id": "qa110",
+    "title": "What is Re-Ranking?",
+    "body": "Re-ranking refines initial retrieval results using a more powerful model for better relevance."
+  },
+  {
+    "id": "qa111",
+    "title": "What is Prompt Injection?",
+    "body": "Prompt injection is an attack where malicious instructions override intended behavior through crafted inputs."
+  },
+  {
+    "id": "qa112",
+    "title": "What is Jailbreaking LLMs?",
+    "body": "Jailbreaking attempts to bypass safety restrictions in LLMs through carefully designed prompts."
+  },
+  {
+    "id": "qa113",
+    "title": "What is Guardrails?",
+    "body": "Guardrails are safety mechanisms that filter inputs and outputs to prevent harmful content."
+  },
+  {
+    "id": "qa114",
+    "title": "What is Evaluation Benchmark?",
+    "body": "Benchmarks like MMLU, GSM8K, or HumanEval measure model performance across standardized tasks."
+  },
+  {
+    "id": "qa115",
+    "title": "What is Leaderboard?",
+    "body": "AI leaderboards (e.g., LMSYS, Hugging Face) rank models based on community votes or benchmark scores."
+  },
+  {
+    "id": "qa116",
+    "title": "What is OpenAI?",
+    "body": "OpenAI is an AI research organization known for developing GPT models and pioneering RLHF alignment."
+  },
+  {
+    "id": "qa117",
+    "title": "What is Anthropic?",
+    "body": "Anthropic is an AI safety-focused company developing Claude models with emphasis on constitutional AI."
+  },
+  {
+    "id": "qa118",
+    "title": "What is xAI?",
+    "body": "xAI is an AI company founded by Elon Musk aiming to understand the universe through advanced AI systems."
+  },
+  {
+    "id": "qa119",
+    "title": "What is Grok?",
+    "body": "Grok is an AI model developed by xAI, designed to be maximally truthful and helpful with a unique perspective."
+  },
+  {
+    "id": "qa120",
+    "title": "What is DeepMind?",
+    "body": "DeepMind is a Google subsidiary known for breakthroughs in reinforcement learning and protein folding (AlphaFold)."
+  },
+  {
+    "id": "qa121",
+    "title": "What is Meta AI?",
+    "body": "Meta AI develops open-source models like Llama and focuses on multimodal and long-context research."
+  },
+  {
+    "id": "qa122",
+    "title": "What is Mistral AI?",
+    "body": "Mistral AI is a European company creating efficient open-weight models like Mistral and Mixtral."
+  },
+  {
+    "id": "qa123",
+    "title": "What is Cohere?",
+    "body": "Cohere provides enterprise-focused language models with strong retrieval and tool-use capabilities."
+  },
+  {
+    "id": "qa124",
+    "title": "What is Perplexity AI?",
+    "body": "Perplexity AI combines search and generation for answer engines with real-time web access."
+  },
+  {
+    "id": "qa125",
+    "title": "What is AI Chip?",
+    "body": "AI chips (e.g., GPUs, TPUs) are specialized hardware optimized for parallel matrix operations in deep learning."
+  },
+  {
+    "id": "qa126",
+    "title": "What is NVIDIA?",
+    "body": "NVIDIA dominates AI hardware with GPUs and software ecosystem (CUDA) essential for training large models."
+  },
+  {
+    "id": "qa127",
+    "title": "What is Training Compute?",
+    "body": "Training compute measures total computational resources (FLOPs) used to train a model."
+  },
+  {
+    "id": "qa128",
+    "title": "What is Inference Cost?",
+    "body": "Inference cost is the computational expense of generating outputs from a trained model."
+  },
+  {
+    "id": "qa129",
+    "title": "What is API for LLMs?",
+    "body": "LLM APIs provide programmatic access to models for generation, embedding, and other tasks."
+  },
+  {
+    "id": "qa130",
+    "title": "What is Fine-Tuning API?",
+    "body": "Fine-tuning APIs allow users to adapt base models on custom data through cloud services."
+  },
+  {
+    "id": "qa131",
+    "title": "What is Hugging Face?",
+    "body": "Hugging Face is a platform hosting thousands of open-source models, datasets, and tools for AI development."
+  },
+  {
+    "id": "qa132",
+    "title": "What is LangChain?",
+    "body": "LangChain is a framework for building applications with LLMs using chains, agents, and memory."
+  },
+  {
+    "id": "qa133",
+    "title": "What is LlamaIndex?",
+    "body": "LlamaIndex is a data framework for connecting custom data sources to LLMs, especially for RAG."
+  },
+  {
+    "id": "qa134",
+    "title": "What is Vector Embedding?",
+    "body": "Vector embeddings represent meaning in high-dimensional space where similar items are close together."
+  },
+  {
+    "id": "qa135",
+    "title": "What is Cosine Similarity?",
+    "body": "Cosine similarity measures angle between vectors to assess semantic similarity of embeddings."
+  },
+  {
+    "id": "qa136",
+    "title": "What is Semantic Search?",
+    "body": "Semantic search retrieves documents based on meaning rather than exact keyword matches using embeddings."
+  },
+  {
+    "id": "qa137",
+    "title": "What is Chunking Strategy?",
+    "body": "Chunking divides long documents into manageable pieces for effective retrieval in RAG systems."
+  },
+  {
+    "id": "qa138",
+    "title": "What is Hypothetical Document Embeddings (HyDE)?",
+    "body": "HyDE generates hypothetical answers to queries and uses them for more accurate retrieval."
+  },
+  {
+    "id": "qa139",
+    "title": "What is Multi-Query Retrieval?",
+    "body": "Multi-query retrieval expands a single query into multiple variations for broader coverage."
+  },
+  {
+    "id": "qa140",
+    "title": "What is Parent Document Retrieval?",
+    "body": "Parent document retrieval fetches larger context around small chunks for better generation."
+  },
+  {
+    "id": "qa141",
+    "title": "What is Self-Querying Retriever?",
+    "body": "Self-querying uses LLMs to extract structured filters from natural language queries."
+  },
+  {
+    "id": "qa142",
+    "title": "What is Compression in RAG?",
+    "body": "Context compression summarizes or filters retrieved documents to fit within model context limits."
+  },
+  {
+    "id": "qa143",
+    "title": "What is Routing in RAG?",
+    "body": "Routing directs queries to specialized retrieval systems or models based on intent."
+  },
+  {
+    "id": "qa144",
+    "title": "What is Corrective RAG?",
+    "body": "Corrective RAG evaluates retrieval quality and falls back to alternative strategies if needed."
+  },
+  {
+    "id": "qa145",
+    "title": "What is Adaptive RAG?",
+    "body": "Adaptive RAG dynamically adjusts retrieval strategy based on query complexity."
+  },
+  {
+    "id": "qa146",
+    "title": "What is Graph RAG?",
+    "body": "Graph RAG uses knowledge graphs to enhance retrieval with structured relationships."
+  },
+  {
+    "id": "qa147",
+    "title": "What is Agent Memory?",
+    "body": "Agent memory stores past interactions and reflections for long-term coherence in autonomous agents."
+  },
+  {
+    "id": "qa148",
+    "title": "What is Reflection in Agents?",
+    "body": "Reflection allows agents to critique their own reasoning and improve future actions."
+  },
+  {
+    "id": "qa149",
+    "title": "What is Planning in Agents?",
+    "body": "Planning decomposes complex tasks into subgoals and sequences actions accordingly."
+  },
+  {
+    "id": "qa150",
+    "title": "What is ReAct Paradigm?",
+    "body": "ReAct combines reasoning traces with actions, allowing interleaved thought and tool use."
+  },
+  {
+    "id": "qa151",
+    "title": "What is Tree of Thoughts?",
+    "body": "Tree of Thoughts explores multiple reasoning paths systematically like tree search."
+  },
+  {
+    "id": "qa152",
+    "title": "What is Graph of Thoughts?",
+    "body": "Graph of Thoughts extends tree structures to allow merging and non-linear reasoning paths."
+  },
+  {
+    "id": "qa153",
+    "title": "What is Skeleton of Thought?",
+    "body": "Skeleton of Thought first outlines key points then expands them in parallel for faster response."
+  },
+  {
+    "id": "qa154",
+    "title": "What is Verification in Reasoning?",
+    "body": "Verification checks generated answers against sources or runs code execution for correctness."
+  },
+  {
+    "id": "qa155",
+    "title": "What is Self-Consistency?",
+    "body": "Self-consistency samples multiple reasoning paths and selects the most consistent answer."
+  },
+  {
+    "id": "qa156",
+    "title": "What is Majority Voting in Generation?",
+    "body": "Majority voting samples multiple completions and chooses the most frequent response."
+  },
+  {
+    "id": "qa157",
+    "title": "What is Monte Carlo Tree Search in LLMs?",
+    "body": "MCTS adapts search algorithms to guide LLM reasoning exploration."
+  },
+  {
+    "id": "qa158",
+    "title": "What is Reward Hacking?",
+    "body": "Reward hacking occurs when agents exploit specification flaws to maximize reward without intended behavior."
+  },
+  {
+    "id": "qa159",
+    "title": "What is Specification Gaming?",
+    "body": "Specification gaming is finding unintended solutions that technically satisfy objectives but not intent."
+  },
+  {
+    "id": "qa160",
+    "title": "What is Inner Monologue?",
+    "body": "Inner monologue hides intermediate reasoning from final output for cleaner responses."
+  },
+  {
+    "id": "qa161",
+    "title": "What is Outer Monologue?",
+    "body": "Outer monologue exposes step-by-step reasoning to improve transparency and debugging."
+  },
+  {
+    "id": "qa162",
+    "title": "What is System Prompt?",
+    "body": "System prompt sets model behavior and role at the beginning of conversation."
+  },
+  {
+    "id": "qa163",
+    "title": "What is Role-Playing Prompt?",
+    "body": "Role-playing prompts instruct models to adopt specific personas for consistent responses."
+  },
+  {
+    "id": "qa164",
+    "title": "What is Structured Output?",
+    "body": "Structured output constrains generation to formats like JSON using parsing or guidance."
+  },
+  {
+    "id": "qa165",
+    "title": "What is Function Calling?",
+    "body": "Function calling allows models to output structured calls to external tools or APIs."
+  },
+  {
+    "id": "qa166",
+    "title": "What is Parallel Tool Calling?",
+    "body": "Parallel tool calling enables simultaneous execution of multiple functions in one response."
+  },
+  {
+    "id": "qa167",
+    "title": "What is Streaming Response?",
+    "body": "Streaming delivers tokens incrementally for lower perceived latency in generation."
+  },
+  {
+    "id": "qa168",
+    "title": "What is Logprobs?",
+    "body": "Logprobs provide probability scores for generated tokens useful for uncertainty estimation."
+  },
+  {
+    "id": "qa169",
+    "title": "What is Top-P Sampling?",
+    "body": "Top-p (nucleus) sampling selects from smallest token set exceeding probability mass p."
+  },
+  {
+    "id": "qa170",
+    "title": "What is Top-K Sampling?",
+    "body": "Top-k sampling restricts selection to k most probable tokens at each step."
+  },
+  {
+    "id": "qa171",
+    "title": "What is Greedy Decoding?",
+    "body": "Greedy decoding always chooses the single most probable token at each step."
+  },
+  {
+    "id": "qa172",
+    "title": "What is Contrastive Search?",
+    "body": "Contrastive search penalizes repetitive or low-confidence tokens for diverse outputs."
+  },
+  {
+    "id": "qa173",
+    "title": "What is Typical Sampling?",
+    "body": "Typical sampling favors tokens near expected entropy for natural text distribution."
+  },
+  {
+    "id": "qa174",
+    "title": "What is Mirostat Sampling?",
+    "body": "Mirostat dynamically adjusts sampling to maintain constant surprise level."
+  },
+  {
+    "id": "qa175",
+    "title": "What is Repetition Penalty?",
+    "body": "Repetition penalty reduces probability of recently generated tokens to avoid loops."
+  },
+  {
+    "id": "qa176",
+    "title": "What is Presence Penalty?",
+    "body": "Presence penalty discourages any token that has appeared before in context."
+  },
+  {
+    "id": "qa177",
+    "title": "What is Frequency Penalty?",
+    "body": "Frequency penalty scales penalty based on how often token has appeared."
+  },
+  {
+    "id": "qa178",
+    "title": "What is Stop Sequences?",
+    "body": "Stop sequences define tokens that halt generation when produced."
+  },
+  {
+    "id": "qa179",
+    "title": "What is Max Tokens?",
+    "body": "Max tokens limits the length of generated response."
+  },
+  {
+    "id": "qa180",
+    "title": "What is Seed?",
+    "body": "Seed fixes random number generator for reproducible sampling results."
+  },
+  {
+    "id": "qa181",
+    "title": "What is System Fingerprint?",
+    "body": "System fingerprint identifies model version and configuration for reproducibility."
+  },
+  {
+    "id": "qa182",
+    "title": "What is Rate Limit?",
+    "body": "Rate limits restrict number of requests per time period for API usage."
+  },
+  {
+    "id": "qa183",
+    "title": "What is Token Limit?",
+    "body": "Token limit caps total input plus output tokens per request."
+  },
+  {
+    "id": "qa184",
+    "title": "What is Context Overflow?",
+    "body": "Context overflow occurs when input exceeds model maximum token capacity."
+  },
+  {
+    "id": "qa185",
+    "title": "What is Truncation?",
+    "body": "Truncation shortens input to fit within context window, usually from the beginning."
+  },
+  {
+    "id": "qa186",
+    "title": "What is Sliding Window?",
+    "body": "Sliding window maintains recent context by discarding oldest messages."
+  },
+  {
+    "id": "qa187",
+    "title": "What is Conversation History?",
+    "body": "Conversation history preserves previous messages for coherent multi-turn dialogue."
+  },
+  {
+    "id": "qa188",
+    "title": "What is Memory Management?",
+    "body": "Memory management selectively retains or summarizes past context for long conversations."
+  },
+  {
+    "id": "qa189",
+    "title": "What is Summarization for Memory?",
+    "body": "Summarization compresses conversation history into concise representations."
+  },
+  {
+    "id": "qa190",
+    "title": "What is Episodic Memory?",
+    "body": "Episodic memory stores specific events or interactions for retrieval."
+  },
+  {
+    "id": "qa191",
+    "title": "What is Semantic Memory?",
+    "body": "Semantic memory holds general facts and knowledge independent of specific contexts."
+  },
+  {
+    "id": "qa192",
+    "title": "What is Procedural Memory?",
+    "body": "Procedural memory encodes skills and tool usage patterns in agents."
+  },
+  {
+    "id": "qa193",
+    "title": "What is Working Memory?",
+    "body": "Working memory holds temporary information during current task execution."
+  },
+  {
+    "id": "qa194",
+    "title": "What is Forgetting in AI?",
+    "body": "Forgetting mechanisms selectively remove outdated or irrelevant information."
+  },
+  {
+    "id": "qa195",
+    "title": "What is Continual Learning?",
+    "body": "Continual learning enables models to learn new tasks without forgetting previous ones."
+  },
+  {
+    "id": "qa196",
+    "title": "What is Catastrophic Forgetting?",
+    "body": "Catastrophic forgetting is severe loss of prior knowledge when learning new information."
+  },
+  {
+    "id": "qa197",
+    "title": "What is Elastic Weight Consolidation?",
+    "body": "EWC protects important parameters from change during continual learning."
+  },
+  {
+    "id": "qa198",
+    "title": "What is Replay Buffer?",
+    "body": "Replay buffer stores past experiences for rehearsal in reinforcement learning."
+  },
+  {
+    "id": "qa199",
+    "title": "What is Experience Replay?",
+    "body": "Experience replay samples past transitions to stabilize RL training."
+  },
+  {
+    "id": "qa200",
+    "title": "What is Q-Learning?",
+    "body": "Q-learning is an off-policy RL algorithm that learns optimal action values."
+  },
+  {
+    "id": "qa201",
+    "title": "What is Policy Gradient?",
+    "body": "Policy gradient methods directly optimize policy parameters using gradients."
+  },
+  {
+    "id": "qa202",
+    "title": "What is Actor-Critic?",
+    "body": "Actor-critic combines policy (actor) and value estimation (critic) for stable learning."
+  },
+  {
+    "id": "qa203",
+    "title": "What is PPO?",
+    "body": "Proximal Policy Optimization is a stable policy gradient algorithm with clipped objectives."
+  },
+  {
+    "id": "qa204",
+    "title": "What is DPO?",
+    "body": "Direct Preference Optimization aligns models without explicit reward modeling."
+  },
+  {
+    "id": "qa205",
+    "title": "What is ORPO?",
+    "body": "Odds Ratio Preference Optimization simplifies alignment training."
+  },
+  {
+    "id": "qa206",
+    "title": "What is SimPO?",
+    "body": "Simple Preference Optimization improves alignment efficiency."
+  },
+  {
+    "id": "qa207",
+    "title": "What is KTO?",
+    "body": "Kahneman-Tversky Optimization uses human behavioral insights for alignment."
+  },
+  {
+    "id": "qa208",
+    "title": "What is Supervised Fine-Tuning (SFT)?",
+    "body": "SFT trains models on high-quality input-output pairs to follow instructions."
+  },
+  {
+    "id": "qa209",
+    "title": "What is Instruction Tuning?",
+    "body": "Instruction tuning trains on diverse tasks formatted as instructions for better following."
+  },
+  {
+    "id": "qa210",
+    "title": "What is Preference Data?",
+    "body": "Preference data ranks multiple responses to the same prompt for alignment training."
+  },
+  {
+    "id": "qa211",
+    "title": "What is Synthetic Data?",
+    "body": "Synthetic data is artificially generated to augment training datasets."
+  },
+  {
+    "id": "qa212",
+    "title": "What is Self-Instruct?",
+    "body": "Self-instruct generates instruction data using the model itself."
+  },
+  {
+    "id": "qa213",
+    "title": "What is Evol-Instruct?",
+    "body": "Evol-Instruct evolves instructions progressively to increase complexity."
+  },
+  {
+    "id": "qa214",
+    "title": "What is Phi Series?",
+    "body": "Microsoft's Phi models demonstrate strong performance from high-quality small datasets."
+  },
+  {
+    "id": "qa215",
+    "title": "What is Textbook Quality Data?",
+    "body": "High-quality curated data often outperforms larger noisy datasets."
+  },
+  {
+    "id": "qa216",
+    "title": "What is Data Contamination?",
+    "body": "Data contamination occurs when test benchmarks appear in training data."
+  },
+  {
+    "id": "qa217",
+    "title": "What is Benchmark Leakage?",
+    "body": "Leakage compromises evaluation validity when models memorize test sets."
+  },
+  {
+    "id": "qa218",
+    "title": "What is Overfitting to Benchmarks?",
+    "body": "Models may optimize for specific benchmarks rather than general capability."
+  },
+  {
+    "id": "qa219",
+    "title": "What is Capability Evaluation?",
+    "body": "Rigorous evaluation tests genuine understanding beyond memorization."
+  },
+  {
+    "id": "qa220",
+    "title": "What is BIG-Bench?",
+    "body": "BIG-Bench is a diverse benchmark with hundreds of challenging tasks."
+  },
+  {
+    "id": "qa221",
+    "title": "What is HELM?",
+    "body": "HELM evaluates models across accuracy, robustness, fairness, and efficiency."
+  },
+  {
+    "id": "qa222",
+    "title": "What is MT-Bench?",
+    "body": "MT-Bench tests multi-turn conversational ability with challenging questions."
+  },
+  {
+    "id": "qa223",
+    "title": "What is Arena (LMSYS)?",
+    "body": "Chatbot Arena uses blind pairwise comparisons for crowd-sourced ranking."
+  },
+  {
+    "id": "qa224",
+    "title": "What is Elo Rating?",
+    "body": "Elo rating system ranks models based on pairwise battle outcomes."
+  },
+  {
+    "id": "qa225",
+    "title": "What is Human Preference?",
+    "body": "Human judgments remain the gold standard for evaluating response quality."
+  },
+  {
+    "id": "qa226",
+    "title": "What is Automated Evaluation?",
+    "body": "Automated metrics like BLEU, ROUGE, or LLM-as-judge approximate human assessment."
+  },
+  {
+    "id": "qa227",
+    "title": "What is LLM-as-a-Judge?",
+    "body": "Using powerful LLMs to score responses often correlates well with human ratings."
+  },
+  {
+    "id": "qa228",
+    "title": "What is Reward Model?",
+    "body": "Reward models predict human preference scores for alignment training."
+  },
+  {
+    "id": "qa229",
+    "title": "What is Bradley-Terry Model?",
+    "body": "Bradley-Terry models probability of preference in pairwise comparisons."
+  },
+  {
+    "id": "qa230",
+    "title": "What is Safety Evaluation?",
+    "body": "Safety evaluation tests for harmful outputs across categories like violence or misinformation."
+  },
+  {
+    "id": "qa231",
+    "title": "What is Truthfulness?",
+    "body": "Truthfulness measures factual accuracy and resistance to hallucination."
+  },
+  {
+    "id": "qa232",
+    "title": "What is Helpfulness?",
+    "body": "Helpfulness assesses whether responses effectively address user intent."
+  },
+  {
+    "id": "qa233",
+    "title": "What is Honesty?",
+    "body": "Honesty involves admitting uncertainty rather than confidently hallucinating."
+  },
+  {
+    "id": "qa234",
+    "title": "What is Harmlessness?",
+    "body": "Harmlessness ensures responses avoid promoting harm or toxicity."
+  },
+  {
+    "id": "qa235",
+    "title": "What is Toxicity Detection?",
+    "body": "Toxicity classifiers identify harmful language in inputs and outputs."
+  },
+  {
+    "id": "qa236",
+    "title": "What is Content Moderation?",
+    "body": "Content moderation filters inappropriate material in AI applications."
+  },
+  {
+    "id": "qa237",
+    "title": "What is Adversarial Robustness?",
+    "body": "Robustness against deliberate attempts to elicit harmful responses."
+  },
+  {
+    "id": "qa238",
+    "title": "What is Refusal Mechanism?",
+    "body": "Refusal mechanisms decline to answer inappropriate or dangerous queries."
+  },
+  {
+    "id": "qa239",
+    "title": "What is Circuit Breakers?",
+    "body": "Circuit breakers halt generation upon detecting potentially harmful patterns."
+  },
+  {
+    "id": "qa240",
+    "title": "What is Representation Engineering?",
+    "body": "Representation engineering manipulates internal activations to control behavior."
+  },
+  {
+    "id": "qa241",
+    "title": "What is Activation Steering?",
+    "body": "Steering adds vectors to activations to guide model toward desired traits."
+  },
+  {
+    "id": "qa242",
+    "title": "What is Interpretability?",
+    "body": "Interpretability research aims to understand how models make decisions internally."
+  },
+  {
+    "id": "qa243",
+    "title": "What is Mechanistic Interpretability?",
+    "body": "Mechanistic interpretability reverse-engineers neural networks at circuit level."
+  },
+  {
+    "id": "qa244",
+    "title": "What is Superposition?",
+    "body": "Superposition allows neurons to represent multiple features in overlapping ways."
+  },
+  {
+    "id": "qa245",
+    "title": "What is Polysemantic Neuron?",
+    "body": "Polysemantic neurons activate for multiple unrelated concepts."
+  },
+  {
+    "id": "qa246",
+    "title": "What is Monosemantic Intervention?",
+    "body": "Interventions to make neuron activations correspond to single concepts."
+  },
+  {
+    "id": "qa247",
+    "title": "What is Dictionary Learning?",
+    "body": "Dictionary learning decomposes activations into sparse interpretable features."
+  },
+  {
+    "id": "qa248",
+    "title": "What is Induction Heads?",
+    "body": "Induction heads detect and complete repeated patterns in context."
+  },
+  {
+    "id": "qa249",
+    "title": "What is Grokking Induction?",
+    "body": "Models develop general pattern completion circuits during training."
+  },
+  {
+    "id": "qa250",
+    "title": "What is In-Context Learning Circuit?",
+    "body": "Specific circuits enable models to learn from examples within prompt."
+  },
+  {
+    "id": "qa251",
+    "title": "What is IOI Circuit?",
+    "body": "Indirect Object Identification circuit handles ambiguous pronoun resolution."
+  },
+  {
+    "id": "qa252",
+    "title": "What is Modular Addition?",
+    "body": "Models learn trigonometric representations for modular arithmetic."
+  },
+  {
+    "id": "qa253",
+    "title": "What is Distributed Representations?",
+    "body": "Knowledge is stored across many neurons rather than localized."
+  },
+  {
+    "id": "qa254",
+    "title": "What is Linear Representation Hypothesis?",
+    "body": "Many concepts are represented linearly in activation space."
+  },
+  {
+    "id": "qa255",
+    "title": "What is Probe?",
+    "body": "Linear probes classify concepts from frozen model activations."
+  },
+  {
+    "id": "qa256",
+    "title": "What is Causal Intervention?",
+    "body": "Causal interventions ablate or edit activations to test necessity."
+  },
+  {
+    "id": "qa257",
+    "title": "What is Attribution?",
+    "body": "Attribution methods trace prediction back to input features."
+  },
+  {
+    "id": "qa258",
+    "title": "What is Integrated Gradients?",
+    "body": "Integrated gradients attribute predictions rigorously to inputs."
+  },
+  {
+    "id": "qa259",
+    "title": "What is SHAP?",
+    "body": "SHAP values provide game-theoretic feature importance."
+  },
+  {
+    "id": "qa260",
+    "title": "What is LIME?",
+    "body": "LIME explains individual predictions with local approximations."
+  },
+  {
+    "id": "qa261",
+    "title": "What is Counterfactual Explanation?",
+    "body": "Counterfactuals show minimal input changes that flip predictions."
+  },
+  {
+    "id": "qa262",
+    "title": "What is Feature Visualization?",
+    "body": "Feature visualization optimizes inputs to maximally activate neurons."
+  },
+  {
+    "id": "qa263",
+    "title": "What is Neuron Interpretation?",
+    "body": "Manual inspection of what inputs strongly activate specific neurons."
+  },
+  {
+    "id": "qa264",
+    "title": "What is Automated Interpretation?",
+    "body": "Scaling interpretation through automated labeling of activations."
+  },
+  {
+    "id": "qa265",
+    "title": "What is Scaling Hypothesis?",
+    "body": "Performance improves predictably with more parameters, data, and compute."
+  },
+  {
+    "id": "qa266",
+    "title": "What is Chinchilla Scaling?",
+    "body": "Optimal training balances model size and dataset size roughly equally."
+  },
+  {
+    "id": "qa267",
+    "title": "What is Compute-Optimal?",
+    "body": "Compute-optimal models maximize performance for given training FLOPs."
+  },
+  {
+    "id": "qa268",
+    "title": "What is Post-Training?",
+    "body": "Post-training includes alignment and capability enhancement after pretraining."
+  },
+  {
+    "id": "qa269",
+    "title": "What is Pretraining?",
+    "body": "Pretraining learns general representations from vast unlabeled data."
+  },
+  {
+    "id": "qa270",
+    "title": "What is Next-Token Prediction?",
+    "body": "Core objective of causal language modeling: predict subsequent token."
+  },
+  {
+    "id": "qa271",
+    "title": "What is Masked Language Modeling?",
+    "body": "BERT-style objective predicts masked tokens bidirectionally."
+  },
+  {
+    "id": "qa272",
+    "title": "What is Denoising Objective?",
+    "body": "Models reconstruct corrupted inputs (e.g., T5's span corruption)."
+  },
+  {
+    "id": "qa273",
+    "title": "What is Contrastive Objective?",
+    "body": "Contrastive learning pushes similar pairs together and dissimilar apart."
+  },
+  {
+    "id": "qa274",
+    "title": "What is UL2?",
+    "body": "UL2 uses mixture of denoising objectives for better generalization."
+  },
+  {
+    "id": "qa275",
+    "title": "What is Data Mixture?",
+    "body": "Carefully curated proportions of different data sources in pretraining."
+  },
+  {
+    "id": "qa276",
+    "title": "What is Web Scraping?",
+    "body": "Automated collection of text from internet sources for training data."
+  },
+  {
+    "id": "qa277",
+    "title": "What is Common Crawl?",
+    "body": "Massive web archive used extensively in LLM pretraining."
+  },
+  {
+    "id": "qa278",
+    "title": "What is Data Deduplication?",
+    "body": "Removing duplicate documents to improve data quality and efficiency."
+  },
+  {
+    "id": "qa279",
+    "title": "What is Data Filtering?",
+    "body": "Filtering removes low-quality, toxic, or PII-containing content."
+  },
+  {
+    "id": "qa280",
+    "title": "What is PII Removal?",
+    "body": "Detecting and redacting personally identifiable information."
+  },
+  {
+    "id": "qa281",
+    "title": "What is Copyright Considerations?",
+    "body": "Legal debates around using copyrighted material in training data."
+  },
+  {
+    "id": "qa282",
+    "title": "What is Fair Use?",
+    "body": "Legal doctrine potentially allowing transformative use of copyrighted works."
+  },
+  {
+    "id": "qa283",
+    "title": "What is Opt-Out?",
+    "body": "Mechanisms for content creators to exclude work from training."
+  },
+  {
+    "id": "qa284",
+    "title": "What is Licensing?",
+    "body": "Explicit agreements for using data in AI training."
+  },
+  {
+    "id": "qa285",
+    "title": "What is Energy Consumption?",
+    "body": "Training large models requires massive electricity, raising environmental concerns."
+  },
+  {
+    "id": "qa286",
+    "title": "What is Carbon Footprint?",
+    "body": "Greenhouse gas emissions associated with AI training and inference."
+  },
+  {
+    "id": "qa287",
+    "title": "What is Green AI?",
+    "body": "Focus on energy-efficient algorithms and sustainable practices."
+  },
+  {
+    "id": "qa288",
+    "title": "What is Model Compression?",
+    "body": "Techniques to reduce model size while preserving performance."
+  },
+  {
+    "id": "qa289",
+    "title": "What is Distillation?",
+    "body": "Transferring knowledge from large to small models."
+  },
+  {
+    "id": "qa290",
+    "title": "What is 4-bit Quantization?",
+    "body": "Extreme quantization enabling massive models on consumer hardware."
+  },
+  {
+    "id": "qa291",
+    "title": "What is GGUF Format?",
+    "body": "Efficient quantized model format popular in local inference."
+  },
+  {
+    "id": "qa292",
+    "title": "What is Local LLM?",
+    "body": "Running language models on personal devices for privacy and offline use."
+  },
+  {
+    "id": "qa293",
+    "title": "What is Ollama?",
+    "body": "Tool for easily running local LLMs with simple interface."
+  },
+  {
+    "id": "qa294",
+    "title": "What is LM Studio?",
+    "body": "User-friendly application for discovering and running local models."
+  },
+  {
+    "id": "qa295",
+    "title": "What is Private AI?",
+    "body": "Emphasis on data privacy through on-device or private deployment."
+  },
+  {
+    "id": "qa296",
+    "title": "What is On-Device AI?",
+    "body": "Processing entirely on user hardware without cloud transmission."
+  },
+  {
+    "id": "qa297",
+    "title": "What is Apple Intelligence?",
+    "body": "Apple's on-device and private cloud AI features with strong privacy focus."
+  },
+  {
+    "id": "qa298",
+    "title": "What is Neural Engine?",
+    "body": "Apple's specialized hardware for efficient on-device ML inference."
+  },
+  {
+    "id": "qa299",
+    "title": "What is NPUs?",
+    "body": "Neural Processing Units designed for AI workloads in consumer devices."
+  },
+  {
+    "id": "qa300",
+    "title": "What is Future of AI?",
+    "body": "The future holds continued scaling, multimodal integration, agentic systems, and hopefully beneficial alignment with humanity."
+  }
 ]
