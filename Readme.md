@@ -157,7 +157,8 @@ pip install -r requirements.txt
 Create a .env file inside the backend directory:
 ```
 GROQ_API_KEY=your_groq_api_key_here
-
+JWT_SECRET="supersecretkey-change-this-in-production!!"
+JWT_EXPIRES_MIN=60
 ```
 - Never commit .env files to GitHub
 
