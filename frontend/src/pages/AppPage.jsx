@@ -16,7 +16,7 @@ export default function AppPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [historyLoading, setHistoryLoading] = useState(false);
-  const [isFirstMessage, setIsFirstMessage] = useState(true); // Track if this is the very first ask
+  const [isFirstMessage, setIsFirstMessage] = useState(true);
   const messagesEndRef = useRef(null);
 
   const scrollToBottom = () => {
@@ -28,7 +28,7 @@ export default function AppPage() {
     if (!sessionId) {
       setMessages([]);
       setCurrentSources([]);
-      setIsFirstMessage(true); // Reset for new empty state
+      setIsFirstMessage(true);
       return;
     }
 
@@ -39,7 +39,7 @@ export default function AppPage() {
         const loaded = res.data.map(msg => ({ role: msg.role, content: msg.content }));
         setMessages(loaded);
         setCurrentSources([]);
-        setIsFirstMessage(loaded.length === 0); // Only first if truly empty
+        setIsFirstMessage(loaded.length === 0);
       } catch (err) {
         setError('Failed to load conversation history');
         console.error(err);
@@ -59,7 +59,6 @@ export default function AppPage() {
     let effectiveSessionId = sessionId ? Number(sessionId) : null;
     let wasFirstMessage = isFirstMessage;
 
-    // Create session if none exists
     if (!effectiveSessionId) {
       try {
         const createRes = await api.post('/rag/create_session', { title: 'New Dialogue' });
@@ -72,10 +71,9 @@ export default function AppPage() {
       }
     }
 
-    // Optimistically add user message
     const userMessage = { role: 'user', content: query };
     setMessages(prev => [...prev, userMessage]);
-    setIsFirstMessage(false); // No longer the first message after this
+    setIsFirstMessage(false);
 
     setLoading(true);
     setError('');
@@ -94,7 +92,6 @@ export default function AppPage() {
       setCurrentSources(res.data.sources || []);
       setStatus(res.data.status);
 
-      // Auto-title the session from first user message
       if (wasFirstMessage) {
         const words = query.trim().split(' ').slice(0, 8);
         const newTitle = words.join(' ');
@@ -102,22 +99,21 @@ export default function AppPage() {
 
         try {
           await api.put(`/rag/session/${effectiveSessionId}`, { title: truncatedTitle || 'Untitled Dialogue' });
-          // Optional: refresh sidebar via useSessions if you want immediate update
         } catch (titleErr) {
           console.warn('Failed to auto-title session:', titleErr);
-          // Non-critical error — don't break chat
         }
       }
     } catch (err) {
       setError(err.response?.data?.detail || 'Failed to get answer');
-      setMessages(prev => prev.slice(0, -1)); // Remove optimistic message
-      setIsFirstMessage(wasFirstMessage); // Restore flag if failed
+      setMessages(prev => prev.slice(0, -1));
+      setIsFirstMessage(wasFirstMessage);
     } finally {
       setLoading(false);
     }
   };
 
   const isEmpty = messages.length === 0 && !loading && !historyLoading;
+  const showPromptbar = !!sessionId;  // This is the only new line you need!
 
   return (
     <div className="flex flex-col h-screen bg-marble">
@@ -169,11 +165,14 @@ export default function AppPage() {
         <div ref={messagesEndRef} />
       </div>
 
-      <div className="fixed bottom-0 left-0 right-0 p-6 pointer-events-none z-10">
-        <div className="max-w-4xl mx-auto pointer-events-auto">
-          <Promptbar onSubmit={handleAsk} disabled={loading || historyLoading} />
+      {/* Promptbar only shows when a dialogue is selected */}
+      {showPromptbar && (
+        <div className="fixed bottom-0 left-0 right-0 p-6 pointer-events-none z-10">
+          <div className="max-w-4xl mx-auto pointer-events-auto">
+            <Promptbar onSubmit={handleAsk} disabled={loading || historyLoading} />
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
