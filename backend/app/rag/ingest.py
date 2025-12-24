@@ -11,8 +11,10 @@ from app.core.config import (
     VECTOR_DB_META_PATH,
 )
 
-# NEW: books path
-BOOKS_PATH = os.path.join("app", "data", "books")
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent.parent  # points to /app/backend
+BOOKS_PATH = BASE_DIR / "data" / "books"
 
 # Initialize model once
 model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
