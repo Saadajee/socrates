@@ -46,7 +46,7 @@ export default function Layout() {
 
       {/* Main content */}
       <div className="flex-1 flex flex-col w-full md:ml-0">
-        <header className="bg-parchment/90 backdrop-blur-sm shadow-lg gold-accent px-6 md:px-8 py-5 flex justify-between items-center relative z-30">
+        <header className="bg-parchment/90 backdrop-blur-sm shadow-lg gold-accent px-6 md:px-8 py-5 pb-6 md:pb-8 flex justify-between items-center relative z-30">
           {/* Mobile menu button - only visible on small screens */}
           <button
             onClick={toggleMobileMenu}
